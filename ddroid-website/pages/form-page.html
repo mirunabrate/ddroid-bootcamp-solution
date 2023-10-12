@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="../styles/form-page.css">
+    <script src="https://kit.fontawesome.com/9b09ceb685.js" crossorigin="anonymous"></script>
+   
+  </head>
+  <body>
+      <header>
+        <img src="../public/assets/ddroidd_logo.svg" class="ddroid-logo">
+        <div class="header-title">Autumn - Winter Bootcamp</div>
+      </header>
+      <main>
+        <div class="main-content">
+            <h2>Application Form</h2>
+            <form id="myForm">
+                <!--Contact Information-->
+                <h4>Contact Information</h4>
+                <!--Contact Form-->
+                <div class="contact-form-container">
+                        <div class="input-box">
+                            <label for="firstName">First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                        </div>
+                        <div class="input-box">
+                            <label for="lastName">Last Name<span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Last name">
+                        </div>
+                        <div class="input-box">
+                            <label for="phone">Phone number<span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+40 711 111 111">
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email address<span class="required">*</span></label>
+                            <input type="text" id="email" name="email" placeholder="john@doe.com">
+                        </div>
+                    </div>
+
+                    <!--Address-->
+                    <h4>Address</h4>
+                    <!--Address Form-->
+                    <div class="input-box">
+                        <label for="address1">Address Line 1 <span class="required">*</span></label>
+                        <input type="text" id="address1" name="address1"placeholder="Street name & number">
+                    </div>
+                    <div class="input-box">
+                        <label for="address2">Address Line 2 </label>
+                        <input type="text" id="address2" name="address2" placeholder="Suite, apartment">
+                    </div>
+                    <div class="input-country">
+                        <div>
+                            <label for="country">Country <span class="required">*</span></label><br>
+                            <select id="country" name="country" class="option" required>
+                                <option value="country" selected disabled>Country</option>
+                                <option value="romania">Romania</option>
+                                <option value="bulgaria">Bulgaria</option>
+                                <option value="greece">Greece</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="state">State</label>
+                            <select id="state" name="state" class="option">
+                                <option value="state" selected disabled>State</option>
+                                <option value="no-state-found">No state found</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="city">City <span class="required">*</span></label>
+                            <select id="city" name="city" class="option" required >
+                                <option value="city" selected disabled>City</option>
+                                <option value="iasi">Iasi</option>
+                                <option value="bucharest">Bucharest</option>
+                                <option value="cluj">Cluj</option>
+                            </select>
+                        </div>
+                    </div>
+
+                <div class="join"><button type="submit">Join Us</button></div>
+            </form>
+               
+           
+                
+        </div>
+      </main>
+    <footer>
+        <p>Come to the dark side.. we have <i class="fa-solid fa-cookie"></i></p>
+    </footer>
+
+    <div id="errorMessages" style="color: red;"></div>
+    <script src="./form-page-script.js"></script>
+   
+  </body>
+</html>
